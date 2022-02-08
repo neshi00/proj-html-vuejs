@@ -5,6 +5,9 @@
     <more-about-section />
     <audiobook-section />
     <press-section />
+    <upcoming-events-section />
+
+    <deepening-section />
 
     <footer-box />
   </div>
@@ -16,6 +19,8 @@ import FooterBox from "./components/FooterBox.vue";
 import MoreAboutSection from "./components/MoreAboutSection.vue";
 import AudiobookSection from "./components/AudiobookSection.vue";
 import PressSection from "./components/PressSection.vue";
+import UpcomingEventsSection from "./components/UpcomingEventsSection.vue";
+import DeepeningSection from "./components/DeepeningSection.vue";
 
 export default {
   name: "App",
@@ -25,6 +30,8 @@ export default {
     MoreAboutSection,
     AudiobookSection,
     PressSection,
+    UpcomingEventsSection,
+    DeepeningSection,
   },
 };
 </script>
