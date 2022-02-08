@@ -7,31 +7,37 @@
 
     <div class="boxes-area">
       <div class="box-one">
-        <img src="" alt="" />
-        <h4>test</h4>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ex
-          libero dolore, laboriosam ipsa, at labore similique blanditiis hic ut
-          ullam itaque numquam quas, iusto quidem illo error ducimus dolorem!
-        </p>
+        <div class="text-box">
+          <h4>test</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ex
+            libero dolore, laboriosam ipsa, at labore similique blanditiis hic
+            ut ullam itaque numquam quas, iusto quidem illo error ducimus
+            dolorem!
+          </p>
+        </div>
       </div>
       <div class="box-two">
-        <img src="" alt="" />
-        <h4>test</h4>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ex
-          libero dolore, laboriosam ipsa, at labore similique blanditiis hic ut
-          ullam itaque numquam quas, iusto quidem illo error ducimus dolorem!
-        </p>
+        <div class="text-box">
+          <h4>test</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ex
+            libero dolore, laboriosam ipsa, at labore similique blanditiis hic
+            ut ullam itaque numquam quas, iusto quidem illo error ducimus
+            dolorem!
+          </p>
+        </div>
       </div>
       <div class="box-three">
-        <img src="" alt="" />
-        <h4>test</h4>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ex
-          libero dolore, laboriosam ipsa, at labore similique blanditiis hic ut
-          ullam itaque numquam quas, iusto quidem illo error ducimus dolorem!
-        </p>
+        <div class="text-box">
+          <h4>test</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ex
+            libero dolore, laboriosam ipsa, at labore similique blanditiis hic
+            ut ullam itaque numquam quas, iusto quidem illo error ducimus
+            dolorem!
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -48,11 +54,28 @@ export default {};
 
 .boxes-area {
   display: flex;
+  height: 400px;
 
   .box-one,
   .box-two,
   .box-three {
+    position: relative;
     width: calc(100% / 3);
+
+    .text-box {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .box-one {
+    background: url(../assets/box-1.jpg);
+  }
+  .box-two {
+    background: url(../assets/box-4.jpg);
+  }
+  .box-three {
+    background: url(../assets/box-3.jpg);
   }
 }
 </style>

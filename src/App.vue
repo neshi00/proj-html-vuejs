@@ -6,8 +6,9 @@
     <audiobook-section />
     <press-section />
     <upcoming-events-section />
-
+    <newsletter-section />
     <deepening-section />
+    <recent-articles-section />
 
     <footer-box />
   </div>
@@ -21,6 +22,8 @@ import AudiobookSection from "./components/AudiobookSection.vue";
 import PressSection from "./components/PressSection.vue";
 import UpcomingEventsSection from "./components/UpcomingEventsSection.vue";
 import DeepeningSection from "./components/DeepeningSection.vue";
+import NewsletterSection from "./components/NewsletterSection.vue";
+import RecentArticlesSection from "./components/RecentArticlesSection.vue";
 
 export default {
   name: "App",
@@ -32,6 +35,8 @@ export default {
     PressSection,
     UpcomingEventsSection,
     DeepeningSection,
+    NewsletterSection,
+    RecentArticlesSection,
   },
 };
 </script>
