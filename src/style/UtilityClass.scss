@@ -7,9 +7,17 @@
 body {
   border: 1px solid black;
 
-  .container {
-    width: 1200px;
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+
+  .skinny-container {
+    width: 1300px;
     margin: 0 auto;
-    border: 1px solid red;
+    border: 5px solid red;
   }
 }
