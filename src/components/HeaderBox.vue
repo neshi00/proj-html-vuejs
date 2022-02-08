@@ -1,5 +1,5 @@
 <template>
-  <header class="skinny-container">
+  <header class="container">
     <div class="logo-box">
       <img src="../assets/author-logo-round.png" alt="logo" />
     </div>

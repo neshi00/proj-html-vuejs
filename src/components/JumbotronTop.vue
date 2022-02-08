@@ -5,6 +5,7 @@
     <div class="jumbo-container">
       <div class="jumbo-text-box">
         <h2>Damon Blabla</h2>
+        <!--testo strano  -->
         <div class="text">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, velit
           dolorem? Vero iusto dolore mollitia, quae illum autem fuga natus

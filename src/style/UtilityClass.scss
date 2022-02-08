@@ -15,9 +15,18 @@ body {
     }
   }
 
-  .skinny-container {
+  .macro-container {
+    width: 100%;
+  }
+
+  .container {
     width: 1300px;
     margin: 0 auto;
     border: 5px solid red;
+  }
+
+  .skinny-container {
+    width: 50%;
+    margin: 0 auto;
   }
 }
