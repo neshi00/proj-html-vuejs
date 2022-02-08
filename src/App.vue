@@ -4,6 +4,7 @@
     <!--header interno  -->
     <more-about-section />
     <audiobook-section />
+    <press-section />
 
     <footer-box />
   </div>
@@ -14,6 +15,7 @@ import JumbotronTop from "./components/JumbotronTop.vue";
 import FooterBox from "./components/FooterBox.vue";
 import MoreAboutSection from "./components/MoreAboutSection.vue";
 import AudiobookSection from "./components/AudiobookSection.vue";
+import PressSection from "./components/PressSection.vue";
 
 export default {
   name: "App",
@@ -22,6 +24,7 @@ export default {
     FooterBox,
     MoreAboutSection,
     AudiobookSection,
+    PressSection,
   },
 };
 </script>
