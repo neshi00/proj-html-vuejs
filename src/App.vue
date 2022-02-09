@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <jumbotron-top :navLinks="navLinks" />
+    <fixed-buttons />
+    <jumbo-top :navLinks="navLinks" />
     <!--header interno  -->
     <more-about-section />
     <audiobook-section />
@@ -15,7 +16,7 @@
 </template>
 
 <script>
-import JumbotronTop from "./components/JumbotronTop.vue";
+import JumboTop from "./components/JumboTop.vue";
 import FooterBox from "./components/FooterBox.vue";
 import MoreAboutSection from "./components/MoreAboutSection.vue";
 import AudiobookSection from "./components/AudiobookSection.vue";
@@ -24,11 +25,12 @@ import UpcomingEventsSection from "./components/UpcomingEventsSection.vue";
 import DeepeningSection from "./components/DeepeningSection.vue";
 import NewsletterSection from "./components/NewsletterSection.vue";
 import RecentArticlesSection from "./components/RecentArticlesSection.vue";
+import FixedButtons from "./components/FixedButtons.vue";
 
 export default {
   name: "App",
   components: {
-    JumbotronTop,
+    JumboTop,
     FooterBox,
     MoreAboutSection,
     AudiobookSection,
@@ -37,6 +39,7 @@ export default {
     DeepeningSection,
     NewsletterSection,
     RecentArticlesSection,
+    FixedButtons,
   },
   data() {
     return {
@@ -54,22 +57,27 @@ export default {
         {
           id: "3",
           category: "Testimonials",
+          url: "#",
         },
         {
           id: "4",
           category: "My Blog",
+          url: "#",
         },
         {
           id: "5",
           category: "Meetups",
+          url: "#",
         },
         {
           id: "6",
           category: "Shop",
+          url: "#",
         },
         {
           id: "7",
           category: "Contact Me",
+          url: "#",
         },
       ],
 

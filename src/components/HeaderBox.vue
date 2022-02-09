@@ -7,10 +7,12 @@
     <nav>
       <ul>
         <li v-for="link in navLinks" :key="link.id">
-          <a href="#">{{ link.category }}</a>
+          <a :href="link.url">{{ link.category }}</a>
         </li>
 
-        <li>carrello</li>
+        <li>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </li>
       </ul>
     </nav>
   </header>
