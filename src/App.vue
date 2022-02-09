@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <jumbotron-top />
+    <jumbotron-top :navLinks="navLinks" />
     <!--header interno  -->
     <more-about-section />
     <audiobook-section />
@@ -10,7 +10,7 @@
     <deepening-section />
     <recent-articles-section />
 
-    <footer-box />
+    <footer-box :footerData="footerData" />
   </div>
 </template>
 
@@ -38,9 +38,69 @@ export default {
     NewsletterSection,
     RecentArticlesSection,
   },
+  data() {
+    return {
+      navLinks: [
+        {
+          id: "1",
+          category: "Home",
+          url: "#",
+        },
+        {
+          id: "2",
+          category: "About Me",
+          url: "#",
+        },
+        {
+          id: "3",
+          category: "Testimonials",
+        },
+        {
+          id: "4",
+          category: "My Blog",
+        },
+        {
+          id: "5",
+          category: "Meetups",
+        },
+        {
+          id: "6",
+          category: "Shop",
+        },
+        {
+          id: "7",
+          category: "Contact Me",
+        },
+      ],
+
+      footerData: [
+        {
+          id: "1",
+          category: "ABOUT ME",
+          latinus:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa",
+        },
+        {
+          id: "2",
+          category: "USEFUL LINKS",
+          latinus:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa",
+          links: ["info1", "info2", "info3"],
+        },
+        {
+          id: "3",
+          category: "CONTACT INFO",
+          latinus:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa",
+          info: ["info1", "info2", "info3"],
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style lang="scss">
+@import url("https://use.fontawesome.com/releases/v5.7.1/css/all.css");
 @import "./style/UtilityClass.scss";
 </style>

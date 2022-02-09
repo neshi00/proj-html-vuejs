@@ -6,13 +6,10 @@
 
     <nav>
       <ul>
-        <li><a href="#">testo</a></li>
-        <li>testo</li>
-        <li>testo</li>
-        <li>testo</li>
-        <li>testo</li>
-        <li>testo</li>
-        <li>testo</li>
+        <li v-for="link in navLinks" :key="link.id">
+          <a href="#">{{ link.category }}</a>
+        </li>
+
         <li>carrello</li>
       </ul>
     </nav>
@@ -20,7 +17,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    navLinks: Array,
+  },
+};
 </script>
 
 <style lang="scss" scoped>

@@ -1,6 +1,6 @@
 <template>
   <div class="jumbo">
-    <header-box />
+    <header-box :navLinks="navLinks" />
 
     <div class="jumbo-container">
       <div class="jumbo-text-box">
@@ -52,6 +52,9 @@ import HeaderBox from "./HeaderBox.vue";
 export default {
   components: {
     HeaderBox,
+  },
+  props: {
+    navLinks: Array,
   },
 };
 </script>
