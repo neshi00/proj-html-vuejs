@@ -1,42 +1,27 @@
 <template>
   <div class="container">
     <div class="title-section">
-      <h3>Upcoming Events</h3>
-      <h5>Met the author in person</h5>
+      <h3>Dig A Little Deeper Into Damon Vaughn</h3>
+      <h5>FIND OUT MORE ABOUT THE AUTHOR HIMSELF</h5>
     </div>
 
     <div class="boxes-area">
       <div class="box-one">
         <div class="text-box">
-          <h4>test</h4>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ex
-            libero dolore, laboriosam ipsa, at labore similique blanditiis hic
-            ut ullam itaque numquam quas, iusto quidem illo error ducimus
-            dolorem!
-          </p>
+          <h4>About Me</h4>
+          <p>Vesibulum ante ipsum primis</p>
         </div>
       </div>
       <div class="box-two">
         <div class="text-box">
-          <h4>test</h4>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ex
-            libero dolore, laboriosam ipsa, at labore similique blanditiis hic
-            ut ullam itaque numquam quas, iusto quidem illo error ducimus
-            dolorem!
-          </p>
+          <h4>My Latest Book</h4>
+          <p>Vesibulum ante ipsum primis</p>
         </div>
       </div>
       <div class="box-three">
         <div class="text-box">
-          <h4>test</h4>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ex
-            libero dolore, laboriosam ipsa, at labore similique blanditiis hic
-            ut ullam itaque numquam quas, iusto quidem illo error ducimus
-            dolorem!
-          </p>
+          <h4>Book Signing</h4>
+          <p>Vesibulum ante ipsum primis</p>
         </div>
       </div>
     </div>
@@ -48,34 +33,65 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.title-section {
-  text-align: center;
-}
+.container {
+  padding-bottom: 50px;
 
-.boxes-area {
-  display: flex;
-  height: 400px;
+  .title-section {
+    text-align: center;
+    padding: 20px 0;
 
-  .box-one,
-  .box-two,
-  .box-three {
-    position: relative;
-    width: calc(100% / 3);
+    h3 {
+      padding-top: 10px;
+    }
 
-    .text-box {
-      position: absolute;
-      bottom: 0;
+    h5 {
+      padding: 10px 0;
+      color: lightgreen;
     }
   }
 
-  .box-one {
-    background: url(../assets/box-1.jpg);
-  }
-  .box-two {
-    background: url(../assets/box-4.jpg);
-  }
-  .box-three {
-    background: url(../assets/box-3.jpg);
+  .boxes-area {
+    display: flex;
+    height: 400px;
+
+    .box-one,
+    .box-two,
+    .box-three {
+      position: relative;
+      width: calc(100% / 3);
+      margin: 0 20px;
+      border-bottom-right-radius: 100px;
+
+      .text-box {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        bottom: 0;
+        left: 50%;
+        text-align: center;
+
+        h4 {
+          color: #ffffff;
+          padding: 10px 0;
+        }
+        p {
+          color: orange;
+          padding: 10px 0;
+          border-top: 1px solid green;
+
+          border-top-width: 5px;
+        }
+      }
+    }
+
+    .box-one {
+      background: url(../assets/box-1.jpg);
+    }
+    .box-two {
+      background: url(../assets/box-4.jpg);
+    }
+    .box-three {
+      background: url(../assets/box-3.jpg);
+    }
   }
 }
 </style>

@@ -4,13 +4,13 @@
     <jumbo-top :navLinks="navLinks" />
     <!--header interno  -->
     <more-about-section />
+    <digital-stores />
     <audiobook-section />
     <press-section />
     <upcoming-events-section />
     <newsletter-section />
     <deepening-section />
     <recent-articles-section />
-
     <footer-box :footerData="footerData" />
   </div>
 </template>
@@ -19,6 +19,7 @@
 import JumboTop from "./components/JumboTop.vue";
 import FooterBox from "./components/FooterBox.vue";
 import MoreAboutSection from "./components/MoreAboutSection.vue";
+import DigitalStores from "./components/DigitalStores.vue";
 import AudiobookSection from "./components/AudiobookSection.vue";
 import PressSection from "./components/PressSection.vue";
 import UpcomingEventsSection from "./components/UpcomingEventsSection.vue";
@@ -33,6 +34,7 @@ export default {
     JumboTop,
     FooterBox,
     MoreAboutSection,
+    DigitalStores,
     AudiobookSection,
     PressSection,
     UpcomingEventsSection,
@@ -86,21 +88,30 @@ export default {
           id: "1",
           category: "ABOUT ME",
           latinus:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa",
+            "Vivamus suscipit tortor eget felis porttitor voluptat. Nulla quis lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget felis porttitor voluptat.",
         },
         {
           id: "2",
           category: "USEFUL LINKS",
-          latinus:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa",
-          links: ["info1", "info2", "info3"],
+          latinus: null,
+          links: [
+            "Latest Books",
+            "Upcoming Events",
+            "Recent Articles",
+            "Business Enquiries",
+            "Visit My Foundation",
+          ],
         },
         {
           id: "3",
           category: "CONTACT INFO",
-          latinus:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa",
-          info: ["info1", "info2", "info3"],
+          latinus: null,
+          info: [
+            "63 E. Studebaker Street Bolingbrook, IL 60440",
+            "Phone: (800)000-0000",
+            "Mobile: (800)000-0000",
+            "Email:info@your-company.com",
+          ],
         },
       ],
     };

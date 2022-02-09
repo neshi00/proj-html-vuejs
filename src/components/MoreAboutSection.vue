@@ -1,15 +1,16 @@
 <template>
   <div class="container">
-    <h2>More About blablabla</h2>
+    <h1>More About Damon Vaughn</h1>
     <!--testo strano  -->
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minima
-      rem impedit beatae totam? Asperiores assumenda cum nisi dignissimos
-      consequatur, nulla at pariatur repudiandae deserunt enim maiores iusto
-      temporibus iste!
+      Damon Vaughn is a professor of psychology at the University of Toronto, a
+      clinical psychologist and the author of the multi-million copy bestseller
+      "The story of my life."
     </p>
 
-    <button>test</button>
+    <div>
+      <button>Meet The Author</button>
+    </div>
   </div>
 </template>
 
@@ -20,5 +21,16 @@ export default {};
 <style lang="scss" scoped>
 .container {
   text-align: center;
+  padding: 50px 0;
+
+  h1 {
+    padding: 10px 0;
+  }
+  p {
+    padding: 10px 0;
+  }
+  div {
+    padding: 10px 0 30px 0;
+  }
 }
 </style>

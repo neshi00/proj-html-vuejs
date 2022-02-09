@@ -3,11 +3,11 @@
     <div class="container">
       <header>
         <div class="header-text">
-          <div>Recent Articles</div>
-          <h5>Read the last bla bla bla</h5>
+          <h3>Recent Articles</h3>
+          <h5>READ THE LATEST ENTRIES</h5>
         </div>
         <div class="header-button">
-          <button>bla blabla bla</button>
+          <button>All Articles</button>
         </div>
       </header>
 
@@ -15,37 +15,27 @@
         <div class="macro-box-sx">
           <img src="../assets/20-Tips-scaled.jpg" alt="" />
           <!--todo  -->
-          <h2>Best author of blabla</h2>
+          <h4>20 Creativity Tips</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            ipsum expedita ex facere id illum nemo voluptatum sit inventore
-            provident enim, ad quod natus ratione laudantium sequi modi pariatur
-            tenetur?
+            By admin | October 24th, 2019 | Categories: Event, Tips & Tricks
           </p>
-
-          <span>Justin Blabla, The Ney York Times</span>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
+            vel, ullamcorper sit amet.
+          </p>
         </div>
         <div class="boxes-dx">
           <div class="box-one">
             <img src="../assets/thumb-13-2x-700x441.jpg" alt="catalog photo" />
-            <h4>A true masterpiece, Bravo!</h4>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam,
-              sequi! Natus veritatis optio ipsam tempora, autem fugiat sapiente
-              cumque ullam dolore earum unde quis nisi. Sed eligendi alias quo
-              amet?
-            </p>
+            <h4>What's On Your Booklist?</h4>
+            <p>October 24th, 2019 | 0 Comments</p>
           </div>
 
           <div class="box-two">
             <img src="../assets/thumb-08-2x-320x202.jpg" alt="book photo" />
-            <h4>A Unique view on the world</h4>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam,
-              sequi! Natus veritatis optio ipsam tempora, autem fugiat sapiente
-              cumque ullam dolore earum unde quis nisi. Sed eligendi alias quo
-              amet?
-            </p>
+            <h4>Instanbul Travel Guide</h4>
+            <p>October 24th, 2019 | 0 Comments</p>
           </div>
         </div>
       </section>
@@ -60,15 +50,24 @@ export default {};
 <style lang="scss" scoped>
 .macro-container {
   background-color: beige;
+
   header {
     display: flex;
     justify-content: space-between;
+    padding: 30px 20px;
 
     .header-text {
+      h5 {
+        color: green;
+      }
     }
 
     .header-button {
-      line-height: 70px;
+      margin: auto 0;
+
+      button {
+        background-color: orange;
+      }
     }
   }
 
@@ -87,8 +86,12 @@ export default {};
         width: 100%;
       }
 
+      h4 {
+        padding-top: 10px;
+      }
+
       p {
-        border-top: 1px solid #ffffff;
+        padding: 10px 0;
       }
     }
 
@@ -103,7 +106,14 @@ export default {};
         img {
           width: 100%;
         }
-        border: 1px solid red;
+
+        h4 {
+          padding: 10px 0;
+        }
+
+        p {
+          padding-bottom: 10px;
+        }
       }
     }
   }

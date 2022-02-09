@@ -6,12 +6,13 @@
       </div>
 
       <div class="links-area">
-        <ul>
-          <li v-for="data in footerData" :key="data.id">
+        <ul class="boxes-footer">
+          <li class="single-box" v-for="data in footerData" :key="data.id">
             <h3>{{ data.category }}</h3>
-            <p>
+            <p v-if="data.latinus !== null">
               {{ data.latinus }}
             </p>
+
             <ul v-for="(link, i) in data.links" :key="i">
               <li>
                 <i class="fas fa-angle-right"></i>
@@ -30,8 +31,8 @@
     </div>
     <dir id="copyright">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        voluptatem
+        Copyright 2012-2020 | Avada Theme by <a href="#">ThemeFusion</a>|All
+        Rights Reserved|Powered by <a href="#">WordPress</a>
       </p>
     </dir>
   </div>
@@ -50,7 +51,7 @@ export default {
 .macro-container {
   background: url(../assets/hero-07-2x.jpg);
   background-size: cover;
-  height: 400px;
+  padding: 50px 0;
 
   .container {
     display: flex;
@@ -59,6 +60,7 @@ export default {
     .logo-box {
       height: 150px;
       width: 20%;
+      padding: 20px;
 
       img {
         height: 100%;
@@ -68,11 +70,25 @@ export default {
     .links-area {
       width: 80%;
 
-      ul {
+      .boxes-footer {
         display: flex;
 
-        i {
-          vertical-align: middle;
+        .single-box {
+          width: calc(100% / 3);
+          padding: 20px;
+
+          h3 {
+            padding: 20px 0;
+          }
+
+          i {
+            vertical-align: middle;
+            padding-right: 15px;
+          }
+
+          li {
+            padding-bottom: 10px;
+          }
         }
       }
     }
@@ -81,6 +97,7 @@ export default {
   #copyright {
     p {
       text-align: center;
+      padding: 10px 0;
     }
   }
 }

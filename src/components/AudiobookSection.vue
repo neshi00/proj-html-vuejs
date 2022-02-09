@@ -1,24 +1,16 @@
 <template>
   <div class="macro-container">
     <div class="skinny-container">
-      <div class="digital-stores">
-        <img src="../assets/ebay-logotan-2x.png" alt="ebay logo" />
-        <img src="../assets/audible-logotan-2x.png" alt="audible logo" />
-        <img src="../assets/bb-logotan-2x.png" alt="barnes & noble logo" />
-        <img src="../assets/kindlefire-logotan-2x.png" alt="kindle fire logo" />
-      </div>
       <div class="jumbotron-app">
         <div class="box-image">
           <img src="../assets/audible-app-2x.png" alt="audible app" />
         </div>
         <div class="box-text">
           <h3>New Audiobook</h3>
-          <h5>BLABLABLA BLA BLA</h5>
+          <h5>NO TIME TO READ? NO PROBLEM. LISTEN TO IT</h5>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet ad
-            eius veritatis perspiciatis officia maxime, obcaecati dolor
-            exercitationem recusandae ab dolorem doloremque delectus
-            consequuntur omnis pariatur nisi vel. Similique, iste.
+            Donec fringilla nunc eu turpis dignissim, at euismod sapien
+            tincidunt. Maecenas eleifend congue cursus.
           </p>
           <div class="app-images">
             <img src="../assets/audible-logo.png" alt="audible logo app" />
@@ -45,40 +37,44 @@ export default {};
 .macro-container {
   background: url(../assets/banner.jpg);
   background-size: cover;
-  .skinny-container {
-    border: 5px solid teal;
 
-    .digital-stores {
-      width: calc(100% / 4);
-      display: flex;
+  .jumbotron-app {
+    display: flex;
+
+    .box-image {
+      width: 50%;
 
       img {
         width: 100%;
       }
     }
 
-    .jumbotron-app {
-      display: flex;
+    .box-text {
+      width: 50%;
+      margin: auto 0;
+      padding: 50px;
+      text-align: center;
 
-      .box-image {
-        width: 50%;
-        border: 1px solid green;
-
-        img {
-          width: 100%;
-        }
+      h3 {
+        color: #ffffff;
+        padding: 10px 0;
+      }
+      h5 {
+        color: orange;
+        padding: 10px 0;
+      }
+      p {
+        color: lightgray;
+        padding: 10px 0;
       }
 
-      .box-text {
-        width: 50%;
+      .app-images {
+        width: 100%;
+        display: flex;
 
-        .app-images {
-          width: 100%;
-          display: flex;
-
-          img {
-            width: calc(100% / 3);
-          }
+        img {
+          width: calc(100% / 3);
+          padding: 20px;
         }
       }
     }

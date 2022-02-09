@@ -2,55 +2,62 @@
   <div class="container">
     <header>
       <div class="header-text">
-        <div>What The Critics Say</div>
-        <h5>Tesimonial from around world</h5>
+        <h3>What The Critics Say</h3>
+        <h5>TESTIMONIALS FROM AROUND THE WORLD</h5>
       </div>
       <div class="header-button">
-        <button>bla blabla bla</button>
+        <button>Read All Testimonials</button>
       </div>
     </header>
 
     <section>
       <div class="macro-box-sx">
-        <h2>Best author of blabla</h2>
+        <h2>Best Author Of His Generation</h2>
+        <p>This book will change your perspective on life</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-          ipsum expedita ex facere id illum nemo voluptatum sit inventore
-          provident enim, ad quod natus ratione laudantium sequi modi pariatur
-          tenetur?
+          Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt.
+          Maecenas eleifend congue cursus. In vitae enim quis sem pharetra.
+          Curabitur ercu erat, accumsan id imperdiet et, porttitor at sem
+        </p>
+        <p>
+          Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget
+          felis porttitor voluptat. Nulla quis lorem ut liber. Proin eget tortor
+          risus. Praesent sapien massa, convallis a pellentesque nec, egestas
+          non nisi. Donec rutrum congue leo eget malesuada.
         </p>
         <img
           src="../assets/nytimes-logo-white-xsmall.png"
           alt="the new york times logo"
         />
-        <span>Justin Blabla, The Ney York Times</span>
+        <span>Justin Kilpatrick, The Ney York Times</span>
       </div>
       <div class="boxes-dx">
         <div class="box-one">
-          <h4>A true masterpiece, Bravo!</h4>
+          <h4>A True Masterpiece, Bravo!</h4>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam,
-            sequi! Natus veritatis optio ipsam tempora, autem fugiat sapiente
-            cumque ullam dolore earum unde quis nisi. Sed eligendi alias quo
-            amet?
+            Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo,
+            lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit
+            tortor eget felis porttitor voluptat. Nulla quis lorem ut libero
+            malesuada feug at.
           </p>
         </div>
-        <div>
+        <div class="signature">
           <img src="../assets/theguardian-xsmall.png" alt="the guardian logo" />
-          <span>Gerald Blabla, The Guardian</span>
+          <span>Gerald Hendley, The Guardian</span>
         </div>
+
         <div class="box-two">
-          <h4>A Unique view on the world</h4>
+          <h4>A Unique View On The World</h4>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam,
-            sequi! Natus veritatis optio ipsam tempora, autem fugiat sapiente
-            cumque ullam dolore earum unde quis nisi. Sed eligendi alias quo
-            amet?
+            Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan
+            id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam
+            vehicula elementum sed sit amet dui. Nulla quis lorem ut libero
+            malesuada feugiat. Vestibulum ac diam amet.
           </p>
-          <div>
-            <img src="../assets/globe-xsmall.png" alt="globe logo" />
-            <span>Mary Blabla, The Globe and Mail</span>
-          </div>
+        </div>
+        <div class="signature">
+          <img src="../assets/globe-xsmall.png" alt="globe logo" />
+          <span>Mary Blabla, The Globe and Mail</span>
         </div>
       </div>
     </section>
@@ -62,38 +69,85 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-header {
-  display: flex;
-  justify-content: space-between;
+.container {
+  padding: 50px;
 
-  .header-text {
-  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
 
-  .header-button {
-    line-height: 70px;
-  }
-}
+    .header-text {
+      h3 {
+        padding: 10px 0;
+      }
+      h5 {
+        padding: 10px 0;
+        color: green;
+      }
+    }
 
-section {
-  display: flex;
+    .header-button {
+      margin: auto 0;
+      padding: 0 100px;
 
-  .macro-box-sx {
-    background: url(../assets/testimonial2-2x.jpg);
-    background-size: cover;
-    color: #ffffff;
-    height: 750px;
-    width: 60%;
-
-    p {
-      border-top: 1px solid #ffffff;
+      button {
+        background-color: orange;
+        color: #ffffff;
+      }
     }
   }
 
-  .boxes-dx {
-    width: 40%;
+  section {
+    display: flex;
 
-    .box-one {
-      border: 1px solid red;
+    .macro-box-sx {
+      background: url(../assets/testimonial2-2x.jpg);
+      background-position-y: -100px;
+      background-size: cover;
+      color: #ffffff;
+      width: 60%;
+      padding: 100px;
+      border-bottom-right-radius: 100px;
+
+      h2 {
+        padding: 10px 0;
+      }
+
+      p {
+        padding: 10px 0;
+      }
+
+      img {
+        vertical-align: middle;
+        padding-right: 10px;
+      }
+    }
+
+    .boxes-dx {
+      width: 40%;
+      padding: 0 100px;
+
+      img {
+        vertical-align: middle;
+        padding-right: 10px;
+      }
+
+      .box-one,
+      .box-two {
+        background-color: beige;
+        padding: 20px;
+
+        h4 {
+          padding: 10px 0;
+        }
+        p {
+          padding: 10px 0;
+        }
+      }
+      .signature {
+        margin-bottom: 30px;
+      }
     }
   }
 }
