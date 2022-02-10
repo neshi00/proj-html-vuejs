@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <fixed-buttons />
-    <scroll-button @click="moveUp" />
+    <scroll-button />
     <jumbo-top :navLinks="navLinks" />
     <!--header interno  -->
     <more-about-section />
@@ -12,7 +12,7 @@
     <newsletter-section />
     <deepening-section />
     <recent-articles-section />
-    <footer-box :footerData="footerData" />
+    <footer-box :usefulLinks="usefulLinks" :infoData="infoData" />
   </div>
 </template>
 
@@ -85,49 +85,30 @@ export default {
           url: "#",
         },
       ],
-
-      footerData: [
-        {
-          id: "1",
-          category: "ABOUT ME",
-          latinus:
-            "Vivamus suscipit tortor eget felis porttitor voluptat. Nulla quis lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget felis porttitor voluptat.",
-        },
-        {
-          id: "2",
-          category: "USEFUL LINKS",
-          latinus: null,
-          links: [
-            "Latest Books",
-            "Upcoming Events",
-            "Recent Articles",
-            "Business Enquiries",
-            "Visit My Foundation",
-          ],
-        },
-        {
-          id: "3",
-          category: "CONTACT INFO",
-          latinus: null,
-          info: [
-            "63 E. Studebaker Street Bolingbrook, IL 60440",
-            "Phone: (800)000-0000",
-            "Mobile: (800)000-0000",
-            "Email:info@your-company.com",
-          ],
-        },
+      // -------------------------data footer
+      usefulLinks: [
+        "Latest Books",
+        "Upcoming Events",
+        "Recent Articles",
+        "Business Enquiries",
+        "Visit My Foundation",
       ],
+      infoData: [
+        "63 E. Studebaker Street Bolingbrook, IL 60440",
+        "Phone: (800)000-0000",
+        "Mobile: (800)000-0000",
+        "Email:info@your-company.com",
+      ],
+      // ---------------------------/data footer
     };
-  },
-  methods: {
-    moveUp() {
-      window.scrollTo(0, 0);
-    },
   },
 };
 </script>
 
 <style lang="scss">
 @import url("https://use.fontawesome.com/releases/v5.7.1/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
 @import "./style/UtilityClass.scss";
+@import "./style/ColorsPalette.scss";
 </style>

@@ -19,6 +19,8 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import "../style/ColorsPalette.scss";
+
 .container {
   text-align: center;
   padding: 50px 0;
@@ -31,6 +33,18 @@ export default {};
   }
   div {
     padding: 10px 0 30px 0;
+
+    button {
+      background-color: $green-plt;
+      color: #ffffff;
+      border: 1px solid $green-plt;
+
+      &:hover {
+        background-color: $darkGreen-plt;
+        border: 1px solid $darkGreen-plt;
+        transition: all 0.5s;
+      }
+    }
   }
 }
 </style>

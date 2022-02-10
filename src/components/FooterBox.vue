@@ -6,35 +6,48 @@
       </div>
 
       <div class="links-area">
-        <ul class="boxes-footer">
-          <li class="single-box" v-for="data in footerData" :key="data.id">
-            <h3>{{ data.category }}</h3>
-            <p v-if="data.latinus !== null">
-              {{ data.latinus }}
+        <div class="boxes-footer">
+          <div class="single-box">
+            <h3>ABOUT ME</h3>
+            <p>
+              Vivamus suscipit tortor eget felis porttitor voluptat. Nulla quis
+              lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget
+              felis porttitor voluptat.
             </p>
+          </div>
 
-            <ul v-for="(link, i) in data.links" :key="i">
+          <div class="single-box">
+            <h3>USEFUL LINKS</h3>
+            <ul v-for="(link, i) in usefulLinks" :key="i">
               <li>
-                <i class="fas fa-angle-right"></i>
-                <a href="#">{{ link }}</a>
+                <a href="#"><i class="fas fa-angle-right"></i>{{ link }}</a>
               </li>
             </ul>
+          </div>
 
-            <ul v-for="(info, i) in data.info" :key="i">
-              <li>
-                <a href="#">{{ info }}</a>
-              </li>
+          <div class="single-box">
+            <h3>CONTACT INFO</h3>
+            <ul v-for="(info, i) in infoData" :key="i">
+              <li>{{ info }}</li>
             </ul>
-          </li>
-        </ul>
+            <div class="social-icons">
+              <i class="fab fa-facebook"> </i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <dir id="copyright">
+    <div class="box-bottom container">
       <p>
-        Copyright 2012-2020 | Avada Theme by <a href="#">ThemeFusion</a>|All
-        Rights Reserved|Powered by <a href="#">WordPress</a>
+        Copyright 2012-2020 | Avada Theme by
+        <a href="#"><span>ThemeFusion</span></a
+        >|All Rights Reserved|Powered by <a href="#"><span>WordPress</span></a>
       </p>
-    </dir>
+    </div>
   </div>
 </template>
 
@@ -42,14 +55,17 @@
 export default {
   components: {},
   props: {
-    footerData: Array,
+    usefulLinks: Array,
+    infoData: Array,
   },
 };
 </script>
 
 <style lang="scss" scoped>
+@import "../style/ColorsPalette.scss";
+
 .macro-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../assets/hero-07-2x.jpg);
   background-size: cover;
   padding: 50px 0;
@@ -59,9 +75,8 @@ export default {
     justify-content: space-between;
 
     .logo-box {
-      height: 150px;
+      height: 200px;
       width: 20%;
-      padding: 20px;
 
       img {
         height: 100%;
@@ -76,29 +91,53 @@ export default {
 
         .single-box {
           width: calc(100% / 3);
-          padding: 20px;
+          padding: 0 20px;
 
           h3 {
             padding: 20px 0;
+            color: #ffffff;
+          }
+
+          li {
+            color: $lightgray-plt;
+          }
+
+          p {
+            color: $lightgray-plt;
           }
 
           i {
             vertical-align: middle;
             padding-right: 15px;
+            cursor: pointer;
           }
 
-          li {
-            padding-bottom: 10px;
+          .social-icons {
+            padding: 20px 0;
+            color: $lightgray-plt;
+
+            i {
+              color: $lightgray-plt;
+
+              &:hover {
+                color: #ffffff;
+              }
+            }
           }
         }
       }
     }
   }
+  .box-bottom {
+    color: $lightgray-plt;
+    padding: 50px 0;
 
-  #copyright {
     p {
-      text-align: center;
-      padding: 10px 0;
+      margin: 0 auto;
+
+      span {
+        color: #ffffff;
+      }
     }
   }
 }

@@ -29,7 +29,10 @@
           src="../assets/nytimes-logo-white-xsmall.png"
           alt="the new york times logo"
         />
-        <span>Justin Kilpatrick, The Ney York Times</span>
+        <span
+          >Justin Kilpatrick,
+          <p>The Ney York Times</p></span
+        >
       </div>
       <div class="boxes-dx">
         <div class="box-one">
@@ -69,6 +72,8 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import "../style/ColorsPalette.scss";
+
 .container {
   padding: 50px;
 
@@ -83,7 +88,8 @@ export default {};
       }
       h5 {
         padding: 10px 0;
-        color: green;
+        color: $green-plt;
+        font-size: 20px;
       }
     }
 
@@ -92,8 +98,15 @@ export default {};
       padding: 0 100px;
 
       button {
-        background-color: orange;
+        background-color: $yellow-plt;
+        border: 1px solid $yellow-plt;
         color: #ffffff;
+
+        &:hover {
+          background-color: $brown-plt;
+          border: 1px solid $brown-plt;
+          transition: all 0.5s;
+        }
       }
     }
   }
@@ -104,39 +117,57 @@ export default {};
     .macro-box-sx {
       background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
         url(../assets/testimonial2-2x.jpg);
-      background-position-y: -100px;
       background-size: cover;
+
       color: #ffffff;
-      width: 60%;
-      padding: 100px;
+      width: 50%;
+      padding: 80px;
       border-bottom-right-radius: 100px;
 
+      &:hover {
+        transform: translateY(-10px);
+        transition: all 0.5s;
+        box-shadow: -10px -2px 15px 0px rgba(0, 0, 0, 0.45);
+      }
+
       h2 {
-        padding: 10px 0;
+        padding: 20px 0;
+        border-bottom: 1px solid #ffffff;
       }
 
       p {
         padding: 10px 0;
+        font-size: 20px;
       }
 
       img {
         vertical-align: middle;
-        padding-right: 10px;
+        padding-right: 15px;
+      }
+
+      span {
+        font-size: 20px;
+        font-weight: bold;
+
+        p {
+          color: $green-plt;
+          display: inline-block;
+        }
       }
     }
 
     .boxes-dx {
-      width: 40%;
+      width: 50%;
       padding: 0 100px;
 
       img {
         vertical-align: middle;
-        padding-right: 10px;
+        padding-right: 15px;
       }
 
       .box-one,
       .box-two {
-        background-color: beige;
+        background-color: $beige-plt;
         padding: 20px;
 
         h4 {
@@ -144,10 +175,16 @@ export default {};
         }
         p {
           padding: 10px 0;
+          color: $gray-plt;
         }
       }
       .signature {
         margin-bottom: 30px;
+
+        span {
+          font-weight: bold;
+          color: $gray-plt;
+        }
       }
     }
   }

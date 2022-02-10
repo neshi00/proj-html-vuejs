@@ -13,17 +13,20 @@
 
       <section>
         <div class="macro-box-sx">
-          <img src="../assets/20-Tips-scaled.jpg" alt="" />
-          <!--todo  -->
-          <h4>20 Creativity Tips</h4>
-          <p>
-            By admin | October 24th, 2019 | Categories: Event, Tips & Tricks
-          </p>
-          <p>
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
-            vel, ullamcorper sit amet.
-          </p>
+          <img src="../assets/20-Tips-scaled.jpg" alt="book photo" />
+          <div>
+            <h4>20 Creativity Tips</h4>
+
+            <p>
+              By <b>admin</b> | October 24th, 2019 | Categories: Event, Tips &
+              Tricks
+            </p>
+            <p>
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
+              vel, ullamcorper sit amet.
+            </p>
+          </div>
         </div>
         <div class="boxes-dx">
           <div class="box-one">
@@ -48,8 +51,10 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import "../style/ColorsPalette.scss";
+
 .macro-container {
-  background-color: beige;
+  background-color: $beige-plt;
 
   header {
     display: flex;
@@ -58,7 +63,8 @@ export default {};
 
     .header-text {
       h5 {
-        color: green;
+        color: $green-plt;
+        padding: 10px 0;
       }
     }
 
@@ -66,7 +72,15 @@ export default {};
       margin: auto 0;
 
       button {
-        background-color: orange;
+        background-color: $yellow-plt;
+        border: 1px solid $yellow-plt;
+        color: #ffffff;
+
+        &:hover {
+          background-color: $brown-plt;
+          border: 1px solid $brown-plt;
+          transition: all 0.5s;
+        }
       }
     }
   }
@@ -86,23 +100,30 @@ export default {};
         width: 100%;
       }
 
-      h4 {
-        padding-top: 10px;
-      }
+      div {
+        padding-right: 50px;
 
-      p {
-        padding: 10px 0;
+        h4 {
+          padding-top: 10px;
+        }
+
+        p {
+          padding: 10px 0;
+          color: $gray-plt;
+        }
       }
     }
 
     .boxes-dx {
       background-color: #ffffff;
       margin-left: 10px;
-      width: 40%;
+      width: 30%;
       padding: 20px;
 
       .box-one,
       .box-two {
+        height: 50%;
+
         img {
           width: 100%;
         }
@@ -113,6 +134,7 @@ export default {};
 
         p {
           padding-bottom: 10px;
+          color: $gray-plt;
         }
       }
     }

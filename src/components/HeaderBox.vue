@@ -7,11 +7,15 @@
     <nav>
       <ul>
         <li v-for="link in navLinks" :key="link.id">
-          <a :href="link.url">{{ link.category }}</a>
+          <div class="link-nav">
+            <a :href="link.url">{{ link.category }}</a>
+          </div>
         </li>
 
         <li>
-          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          <div class="link-nav">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
         </li>
       </ul>
     </nav>
@@ -27,6 +31,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/ColorsPalette.scss";
+
 header {
   display: flex;
   justify-content: space-between;
@@ -42,13 +48,22 @@ header {
   }
 
   nav {
-    line-height: 100px;
+    // line-height: 100px;
 
     ul {
       display: flex;
 
       li {
-        padding: 0 5px;
+        padding: 0 20px;
+
+        .link-nav {
+          padding: 20px 0;
+          border-top: 5px solid transparent;
+
+          &:hover {
+            border-top: 5px solid $yellow-plt;
+          }
+        }
       }
     }
   }

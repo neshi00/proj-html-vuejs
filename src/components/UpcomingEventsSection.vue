@@ -41,6 +41,8 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import "../style/ColorsPalette.scss";
+
 .macro-container {
   background-color: beige;
   padding: 50px 0;
@@ -53,6 +55,7 @@ export default {};
     }
     h5 {
       padding-bottom: 30px;
+      color: $yellow-plt;
     }
   }
 
@@ -78,10 +81,12 @@ export default {};
 
       h4 {
         padding: 10px 0;
+        font-weight: bold;
       }
 
       p {
-        border-top: 1px solid gray;
+        border-top: 1px solid $gray-plt;
+        color: $gray-plt;
         margin: 10px;
         padding: 10px 0;
       }

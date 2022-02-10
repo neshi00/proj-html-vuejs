@@ -34,6 +34,8 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import "../style/ColorsPalette.scss";
+
 .macro-container {
   background: url(../assets/banner.jpg);
   background-size: cover;
@@ -65,7 +67,7 @@ export default {};
         padding: 10px 0;
       }
       p {
-        color: lightgray;
+        color: $lightgray-plt;
         padding: 10px 0;
       }
 

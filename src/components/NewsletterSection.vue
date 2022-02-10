@@ -22,6 +22,8 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import "../style/UtilityClass.scss";
+
 .macro-container {
   background: url(../assets/banner-2.jpg);
   background-size: cover;
@@ -38,7 +40,7 @@ export default {};
       padding: 10px 0;
     }
     h5 {
-      color: orange;
+      color: $yellow-plt;
       padding: 10px 0;
     }
 
@@ -49,16 +51,26 @@ export default {};
 
       input {
         width: 70%;
+        padding: 10px;
+        border-radius: 5px;
       }
 
       button {
         width: 30%;
-        background-color: lightgreen;
+        background-color: $green-plt;
+        border: 1px solid $green-plt;
+        color: #ffffff;
         margin-left: 10px;
+
+        &:hover {
+          background-color: $darkGreen-plt;
+          border: 1px solid $darkGreen-plt;
+          transition: all 0.5s;
+        }
       }
     }
     p {
-      color: lightgray;
+      color: $lightgray-plt;
       padding: 10px 0;
     }
   }

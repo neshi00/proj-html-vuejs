@@ -9,18 +9,21 @@
       <div class="box-one">
         <div class="text-box">
           <h4>About Me</h4>
+          <hr />
           <p>Vesibulum ante ipsum primis</p>
         </div>
       </div>
       <div class="box-two">
         <div class="text-box">
           <h4>My Latest Book</h4>
+          <hr />
           <p>Vesibulum ante ipsum primis</p>
         </div>
       </div>
       <div class="box-three">
         <div class="text-box">
           <h4>Book Signing</h4>
+          <hr />
           <p>Vesibulum ante ipsum primis</p>
         </div>
       </div>
@@ -33,6 +36,8 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import "../style/ColorsPalette.scss";
+
 .container {
   padding-bottom: 50px;
 
@@ -46,7 +51,7 @@ export default {};
 
     h5 {
       padding: 10px 0;
-      color: lightgreen;
+      color: $green-plt;
     }
   }
 
@@ -79,11 +84,18 @@ export default {};
           color: #ffffff;
           padding: 10px 0;
         }
+        hr {
+          width: 20%;
+          margin: 0 auto;
+        }
+        .border-custom {
+          border-bottom: 1px solid black;
+          width: 40px;
+          text-align: center;
+        }
         p {
-          color: orange;
+          color: $yellow-plt;
           padding: 10px 0;
-          border-top: 1px solid green;
-
           border-top-width: 5px;
         }
       }

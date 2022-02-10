@@ -1,3 +1,5 @@
+@import "../style/ColorsPalette.scss";
+
 * {
   padding: 0;
   margin: 0;
@@ -5,26 +7,9 @@
 }
 
 body {
-  li {
-    list-style: none;
-  }
-  a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  i {
-    color: #ffffff;
-  }
+  font-family: "Roboto", sans-serif;
 
-  h1 {
-    color: #f3b329;
-  }
-
-  button.btn-custom {
-    padding: 10px 25px;
-    border-radius: 5px;
-  }
-
+  // dimensioni container
   .macro-container {
     width: 100%;
   }
@@ -37,5 +22,47 @@ body {
   .skinny-container {
     width: 70%;
     margin: 0 auto;
+  }
+  // ------------------
+
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  i {
+    color: #ffffff;
+  }
+
+  // dimensione caratteri
+  h1 {
+    color: $yellow-plt;
+    font-size: 50px;
+    font-family: "Comforter", cursive;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  // ---------------------
+
+  // button custom
+  button.btn-custom {
+    padding: 10px 25px;
+    border-radius: 5px;
+  }
+
+  button {
+    cursor: pointer;
   }
 }

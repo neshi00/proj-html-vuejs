@@ -5,7 +5,7 @@
     <div class="jumbo-container">
       <div class="jumbo-text-box">
         <h1>Damon Vaughn</h1>
-        <!--testo strano  -->
+
         <div class="text">
           Best-selling author and the most influential public intellectual in
           the western world right now.
@@ -33,8 +33,12 @@
             </div>
           </div>
           <div class="buttons-box">
-            <button><i class="fab fa-amazon"></i>Buy On Amazon</button>
-            <button><i class="fab fa-apple"></i>Buy On AppStore</button>
+            <button class="btn-custom">
+              <i class="fab fa-amazon"></i>Buy On Amazon
+            </button>
+            <button class="btn-custom">
+              <i class="fab fa-apple"></i>Buy On AppStore
+            </button>
           </div>
         </div>
       </div>
@@ -56,12 +60,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/ColorsPalette.scss";
+
 .jumbo {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../assets/hero-07-2x.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
 
   header {
     height: 30%;
@@ -85,15 +90,16 @@ export default {
       }
       p {
         padding: 10px 0;
+        color: $lightgray-plt;
       }
       .buttons-box {
         padding: 10px 0;
 
         button {
           margin: 0 1px;
-          background-color: #1d1c1a;
+          background-color: $black-plt;
           opacity: 0.8;
-          padding: 10px;
+          padding: 8px;
           border-radius: 5px;
         }
       }
@@ -128,9 +134,11 @@ export default {
             }
             h5 {
               padding: 10px 0;
+              color: $yellow-plt;
             }
             p {
               padding: 10px 0;
+              color: $gray-plt;
             }
           }
         }
@@ -141,10 +149,22 @@ export default {
 
           button {
             width: 50%;
-            padding: 5px 20px;
+            border: 1px solid $green-plt;
+            border-radius: 5px;
+
+            &:hover {
+              background-color: $green-plt;
+              color: #ffffff;
+              transition: all 0.5s;
+              i {
+                color: #ffffff;
+                transition: all 0.5s;
+              }
+            }
 
             i {
               padding: 0 10px;
+              color: $black-plt;
             }
           }
         }

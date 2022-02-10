@@ -16,8 +16,10 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import "../style/ColorsPalette.scss";
+
 .macro-container {
-  background-color: beige;
+  background-color: $beige-plt;
   padding: 50px 0;
 
   .stores-images {
@@ -27,6 +29,7 @@ export default {};
     img {
       width: 100%;
       padding: 0px 30px;
+      cursor: pointer;
     }
   }
 }
