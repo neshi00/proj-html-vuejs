@@ -62,6 +62,12 @@ export default {};
       margin: 0 20px;
       border-bottom-right-radius: 100px;
 
+      &:hover {
+        transform: translateY(-10px);
+        transition: all 0.5s;
+        box-shadow: -10px -2px 15px 0px rgba(0, 0, 0, 0.45);
+      }
+
       .text-box {
         position: absolute;
         transform: translate(-50%, -50%);
@@ -84,13 +90,16 @@ export default {};
     }
 
     .box-one {
-      background: url(../assets/box-1.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../assets/box-1.jpg);
     }
     .box-two {
-      background: url(../assets/box-4.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../assets/box-4.jpg);
     }
     .box-three {
-      background: url(../assets/box-3.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../assets/box-3.jpg);
     }
   }
 }

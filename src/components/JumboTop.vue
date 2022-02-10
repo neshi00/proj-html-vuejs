@@ -58,7 +58,8 @@ export default {
 <style lang="scss" scoped>
 .jumbo {
   height: 100vh;
-  background: url(../assets/hero-07-2x.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../assets/hero-07-2x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -90,6 +91,10 @@ export default {
 
         button {
           margin: 0 1px;
+          background-color: #1d1c1a;
+          opacity: 0.8;
+          padding: 10px;
+          border-radius: 5px;
         }
       }
     }

@@ -6,7 +6,7 @@
         <h5>TESTIMONIALS FROM AROUND THE WORLD</h5>
       </div>
       <div class="header-button">
-        <button>Read All Testimonials</button>
+        <button class="btn-custom">Read All Testimonials</button>
       </div>
     </header>
 
@@ -102,7 +102,8 @@ export default {};
     display: flex;
 
     .macro-box-sx {
-      background: url(../assets/testimonial2-2x.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../assets/testimonial2-2x.jpg);
       background-position-y: -100px;
       background-size: cover;
       color: #ffffff;

@@ -7,7 +7,7 @@
           <h5>READ THE LATEST ENTRIES</h5>
         </div>
         <div class="header-button">
-          <button>All Articles</button>
+          <button class="btn-custom">All Articles</button>
         </div>
       </header>
 

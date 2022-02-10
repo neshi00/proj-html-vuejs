@@ -49,7 +49,8 @@ export default {
 
 <style lang="scss" scoped>
 .macro-container {
-  background: url(../assets/hero-07-2x.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../assets/hero-07-2x.jpg);
   background-size: cover;
   padding: 50px 0;
 

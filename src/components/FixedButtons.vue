@@ -27,7 +27,6 @@ export default {};
   position: relative;
 
   .buttons-box {
-    border: 1px solid greenyellow;
     position: fixed;
     right: 0;
     z-index: 100;

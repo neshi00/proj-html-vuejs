@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <fixed-buttons />
+    <scroll-button @click="moveUp" />
     <jumbo-top :navLinks="navLinks" />
     <!--header interno  -->
     <more-about-section />
@@ -27,6 +28,7 @@ import DeepeningSection from "./components/DeepeningSection.vue";
 import NewsletterSection from "./components/NewsletterSection.vue";
 import RecentArticlesSection from "./components/RecentArticlesSection.vue";
 import FixedButtons from "./components/FixedButtons.vue";
+import ScrollButton from "./components/ScrollButton.vue";
 
 export default {
   name: "App",
@@ -42,6 +44,7 @@ export default {
     NewsletterSection,
     RecentArticlesSection,
     FixedButtons,
+    ScrollButton,
   },
   data() {
     return {
@@ -115,6 +118,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    moveUp() {
+      window.scrollTo(0, 0);
+    },
   },
 };
 </script>

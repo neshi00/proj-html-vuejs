@@ -37,6 +37,7 @@ export default {};
 .macro-container {
   background: url(../assets/banner.jpg);
   background-size: cover;
+  padding-top: 50px;
 
   .jumbotron-app {
     display: flex;

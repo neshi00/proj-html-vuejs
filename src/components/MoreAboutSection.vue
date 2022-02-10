@@ -9,7 +9,7 @@
     </p>
 
     <div>
-      <button>Meet The Author</button>
+      <button class="btn-custom">Meet The Author</button>
     </div>
   </div>
 </template>

@@ -69,6 +69,11 @@ export default {};
 
       img {
         width: 100%;
+
+        &:hover {
+          filter: contrast(0.6) brightness(125%) saturate(175%);
+          transition: all 0.5s;
+        }
       }
 
       h4 {

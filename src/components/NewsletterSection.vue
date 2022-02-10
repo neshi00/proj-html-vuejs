@@ -7,7 +7,7 @@
 
         <div class="box-buttons">
           <input type="text" placeholder="Insert your mail ...*" />
-          <button>Subscribe</button>
+          <button class="btn-custom">Subscribe</button>
         </div>
         <p>
           Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt.
