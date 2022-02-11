@@ -35,11 +35,14 @@ body {
   i {
     color: #ffffff;
   }
+  img {
+    cursor: pointer;
+  }
 
   // dimensione caratteri
   h1 {
     color: $yellow-plt;
-    font-size: 50px;
+    font-size: 70px;
     font-family: "Comforter", cursive;
   }
   h2 {

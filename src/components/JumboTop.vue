@@ -69,15 +69,15 @@ export default {
   background-size: cover;
 
   header {
-    height: 30%;
+    height: 20%;
   }
 
   .jumbo-container {
-    height: 70%;
+    height: 80%;
     display: flex;
 
     .jumbo-text-box {
-      padding: 150px;
+      padding: 100px 0 200px 200px;
       width: 60%;
       color: #ffffff;
 
@@ -87,6 +87,7 @@ export default {
       .text {
         width: 70%;
         padding: 10px 0;
+        font-size: 40px;
       }
       p {
         padding: 10px 0;
